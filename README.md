@@ -3,7 +3,7 @@
 TXT to Excel parser for Litematica's material list.
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
-[![Downloads](https://img.shields.io/github/downloads/bitmap7487/VOCzel-v1/total.svg)](https://github.com/bitmap7487/VOCzel-v1/releases)
+[![Downloads](https://img.shields.io/github/downloads/bitmap7487/VOCzel-v1/total.svg)](https://github.com/bitmap7487/Litematica-Excel/releases)
 ## Download
 
 🟢 **[Stable release](https://github.com/bitmap7487/Litematica-Excel/releases/latest)**
