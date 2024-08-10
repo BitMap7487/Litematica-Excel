@@ -99,7 +99,13 @@ namespace materiallistExcel
 
             Console.WriteLine("Removing all spaces and lines:");
 
-            FileContent = FileContent.Remove(FileContent.Length - 262);
+            int iChar = 0;
+            while (FileContent[iChar] != '|')
+            {
+                iChar++;
+            }
+
+            FileContent = FileContent.Remove(FileContent.Length - iChar * 3);
 
             var builder = new StringBuilder();
 
