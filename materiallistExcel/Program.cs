@@ -138,6 +138,11 @@ namespace materiallistExcel
 
                 string[] splitLine = line.Split('|');
 
+                if (splitLine.Length != 6)
+                {
+                    break;
+                }
+
                 /*
                 Item = splitLine[1]
                 Total = splitLine[2]
