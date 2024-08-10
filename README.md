@@ -25,3 +25,12 @@ TXT to Excel parser for Litematica's material list.
 ![Example of the project](https://gyazo.com/8b48df1e15d7e70ec9cdb08bb6516653.gif)
 ![Difference between txt and excel file](https://i.gyazo.com/9b2ae0db1471df66317fdba7521cee15.png)
 ![How the Excel sheet works](https://gyazo.com/4fdec41313f87141d94aa29c27c90696.gif)
+
+## Contributor
+
+Thanks to this amazing contributor:
+
+| [![Contributor](https://github.com/tlorius.png?size=100)](https://github.com/tlorius) |
+|:---:|
+| [@tlorius](https://github.com/tlorius) |
+| <!--<a href="#" title="Documentation">📝</a>--> <a href="#" title="Fixed Parser to work with new Litematica Material List Files">🛠️</a> <!--<a href="#" title="Bug fixes">🐛</a>--> |
