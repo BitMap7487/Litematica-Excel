@@ -105,7 +105,11 @@ namespace materiallistExcel
                 iChar++;
             }
 
-            FileContent = FileContent.Remove(FileContent.Length - iChar * 3);
+            FileContent = FileContent.Remove(FileContent.Length - (iChar * 3 + 2));
+
+            Console.WriteLine("Converting Line Endings");
+
+            FileContent = FileContent.Replace("\r\n", "\n");
 
             var builder = new StringBuilder();
 
@@ -137,11 +141,6 @@ namespace materiallistExcel
             {
 
                 string[] splitLine = line.Split('|');
-
-                if (splitLine.Length != 6)
-                {
-                    break;
-                }
 
                 /*
                 Item = splitLine[1]
