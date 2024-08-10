@@ -120,7 +120,7 @@ namespace materiallistExcel
             }
 
 
-            builder.Remove(0, builder.ToString().LastIndexOf('+') + 3);
+            builder.Remove(0, builder.ToString().LastIndexOf('+') + 2);
 
             FileContent = builder.ToString();
 
