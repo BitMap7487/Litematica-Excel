@@ -99,7 +99,17 @@ namespace materiallistExcel
 
             Console.WriteLine("Removing all spaces and lines:");
 
-            FileContent = FileContent.Remove(FileContent.Length - 262);
+            int iChar = 0;
+            while (FileContent[iChar] != '|')
+            {
+                iChar++;
+            }
+
+            FileContent = FileContent.Remove(FileContent.Length - (iChar * 3 + 2));
+
+            Console.WriteLine("Converting Line Endings");
+
+            FileContent = FileContent.Replace("\r\n", "\n");
 
             var builder = new StringBuilder();
 
@@ -114,7 +124,7 @@ namespace materiallistExcel
             }
 
 
-            builder.Remove(0, builder.ToString().LastIndexOf('+') + 3);
+            builder.Remove(0, builder.ToString().LastIndexOf('+') + 2);
 
             FileContent = builder.ToString();
 
